@@ -1,0 +1,11 @@
+body {
+    text-transform: capitalize;
+}
+
+.btn-primary {
+    margin-left: -70%;
+    margin-right: 5%;
+}
+.info{
+    margin-left: -70%;
+}
