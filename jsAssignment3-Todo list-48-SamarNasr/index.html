@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/all.css">
+    <title>jsTask3-TODO_List_app-48-SamarNasr</title>
+</head>
+
+<body>
+    <!-- Start Head -->
+    <div class="container bg-opacity-75 bg-dark text-center text-light p-2 mt-4 rounded-3">
+        <h1>to do list</h1>
+    </div>
+    <!-- End Head -->
+    <div class="container bg-success text-center  p-4 mt-3 rounded-3">
+        <!-- Start Add Tasks  -->
+        <div class="form-floating  flex-nowrap my-3">
+            <input type="text" class="form-control" id="Task-Name" placeholder="" aria-label="Username"
+                aria-describedby="addon-wrapping">
+            <label for="Task-Name">task name</label>
+        </div>
+        <div class="form-floating  flex-nowrap my-3">
+            <input type="text" class="form-control" id="Description" placeholder="" aria-label="Username"
+                aria-describedby="addon-wrapping">
+            <label for="Description">description</label>
+        </div>
+        <div class="form-floating  flex-nowrap my-3">
+            <input type="text" class="form-control" id="Task-Project" placeholder="" aria-label="Username"
+                aria-describedby="addon-wrapping">
+            <label for="Task-Project">task project</label>
+        </div>
+        <select class="form-select" id="statues" aria-label="Default select example my-3">
+            <option selected>Choose Statues</option>
+            <option value="Not-Started">not started</option>
+            <option value="In-progress">in progress</option>
+            <option value="Finshed">Finshed</option>
+        </select>
+        <button onclick="addTask()" class="btn btn-primary my-3" id="add">Add Task</button>
+        <button  onclick="updateTask()" class="btn btn-info my-3 d-none" id="update">Update</button>
+        <!-- End Add Tasks  -->
+        <!-- Start Tasks S  -->
+        <div id="Taskcon" class="container bg-opacity-50 bg-dark p-2 mt-2 rounded-3 d-flex flex-wrap"></div>
+        <!-- End Tasks  -->
+    </div>
+
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
