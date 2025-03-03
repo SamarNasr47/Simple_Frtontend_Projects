@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/all.css">
+    <title>Payment</title>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Payment Page</h1>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Course Details</h5>
+                        <div id="courseDetails">
+                            <!-- Course details will be injected here by JavaScript -->
+                        </div>
+                        <h5 class="card-title mt-4">Complete Your Payment</h5>
+                        <form id="paymentForm" onsubmit="return processPayment()">
+                            <div class="form-group">
+                                <label for="cardNumber">Card Number</label>
+                                <input type="text" class="form-control" id="cardNumber" placeholder="Enter your card number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="expirationDate">Expiration Date</label>
+                                <input type="text" class="form-control" id="expirationDate" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" class="form-control" id="cvv" placeholder="Enter CVV" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="billingAddress">Billing Address</label>
+                                <input type="text" class="form-control" id="billingAddress" placeholder="Enter your billing address" required>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block mt-3">Pay Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
